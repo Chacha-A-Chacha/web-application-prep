@@ -1,5 +1,19 @@
 {
   "devDependencies": {
     "tailwindcss": "^3.3.5"
+  },
+  "name": "web-application-prep",
+  "description": "\"Crowdsourcing\" or \"Open Innovation.\"",
+  "version": "1.0.0",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@tailwindcss/forms": "^0.5.6"
   }
 }
