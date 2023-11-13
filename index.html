@@ -192,7 +192,7 @@
         <!-- About Section -->
 
         <div class="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
-            <div class="hidden lg:block bg-gray-50 absolute top-0 bottom-0 left-3/4 w-screen"></div>
+            <div class="hidden lg:block bg-slate-50 absolute top-0 bottom-0 left-3/4 w-screen"></div>
             <div class="mx-auto text-base max-w-prose lg:grid lg:grid-cols-2 lg:gap-8 lg:max-w-none">
                 <div>
                     <h2 class="text-base font-semibold tracking-wider text-cyan-600 uppercase">Overview</h2>
@@ -266,8 +266,10 @@
                 </div>
             </div>
         </div>
+
+
         <!-- Feature section with grid -->
-        <div class="relative bg-white py-16 sm:py-24 lg:py-32">
+        <div class="relative bg-white py-16 sm:py-16 lg:py-16">
             <div class="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
                 <h2 class="text-base font-semibold tracking-wider text-cyan-600 uppercase">features</h2>
                 <p class="mt-2 text-3xl font-bold text-gray-900 tracking-tight sm:text-4xl">What sets
@@ -507,104 +509,114 @@
         </div>
 
         <!-- Crowd Sourcing section -->
-        <div class="pb-16 bg-gradient-to-r from-teal-500 to-cyan-600 lg:pb-0 lg:z-10 lg:relative">
-            <div class="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-3 lg:gap-8">
-                <div class="relative lg:-my-8">
-                    <div aria-hidden="true" class="absolute inset-x-0 top-0 h-1/2 bg-white lg:hidden"></div>
-                    <div class="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:p-0 lg:h-full">
-                        <div
-                            class="aspect-w-10 aspect-h-6 rounded-xl shadow-xl overflow-hidden sm:aspect-w-16 sm:aspect-h-7 lg:aspect-none lg:h-full">
-                            <img class="object-cover lg:h-full lg:w-full"
-                                src="https://images.unsplash.com/photo-1520333789090-1afc82db536a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2102&q=80"
-                                alt="">
+        <section class="py-16">
+            <div class="bg-gradient-to-r from-teal-500 to-cyan-600 lg:pb-0 lg:z-10 lg:relative">
+                <div class="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-3 lg:gap-8">
+                    <div class="relative lg:-my-8">
+                        <div aria-hidden="true" class="absolute inset-x-0 top-0 h-1/2 bg-white lg:hidden"></div>
+                        <div class="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:p-0 lg:h-full">
+                            <div
+                                class="aspect-w-10 aspect-h-6 rounded-xl shadow-xl overflow-hidden sm:aspect-w-16 sm:aspect-h-7 lg:aspect-none lg:h-full">
+                                <img class="object-cover lg:h-full lg:w-full"
+                                    src="https://images.unsplash.com/photo-1520333789090-1afc82db536a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2102&q=80"
+                                    alt="">
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="mt-12 lg:m-0 lg:col-span-2 lg:pl-8">
-                    <div class="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 lg:px-0 lg:py-20 lg:max-w-none">
-                        <h2 class="text-base font-semibold uppercase tracking-wider text-gray-200">Share Your Ideas –
-                            Help
-                            Us Improve!</h2>
-                        <p class="mt-2 text-white text-3xl font-bold tracking-tight sm:text-4xl">We’re here to help</p>
-                        <p class="mt-3 text-xl text-gray-300">At E-Passport, we believe in continuous
-                            improvement, and your insights matter
-                            to us! We invite you to share your thoughts and ideas on how we can enhance our attendance
-                            tracking system to better suit your
-                            needs. Your feedback is invaluable in shaping the future of our application, ensuring it
-                            meets
-                            the unique requirements of
-                            educators, event organizers, and students.</p>
-                        <div x-data="{ isOpen: true }" class="mt-8">
-                            <button @click="isOpen = true" class="inline-flex rounded-md shadow" type="button">
-                                <a  href="#"
-                                    class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-50">
-                                    Visit the help center
-                                    <!-- Heroicon name: solid/external-link -->
-                                    <svg class="-mr-1 ml-3 h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                        <path
-                                            d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
-                                        <path
-                                            d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
-                                    </svg>
-                                </a>
-                            </button>
-                            <div x-show="isOpen" x-transition:enter="transition duration-300 ease-out"
-                                x-transition:enter-start="translate-y-4 opacity-0 sm:translate-y-0 sm:scale-95"
-                                x-transition:enter-end="translate-y-0 opacity-100 sm:scale-100" x-transition:leave="transition duration-150 ease-in"
-                                x-transition:leave-start="translate-y-0 opacity-100 sm:scale-100"
-                                x-transition:leave-end="translate-y-4 opacity-0 sm:translate-y-0 sm:scale-95"
-                                class="fixed inset-0 z-10 overflow-y-auto" aria-labelledby="modal-title" role="dialog" aria-modal="true">
-                                <div class="flex items-end justify-center min-h-screen px-4 pt-4 pb-20 text-center sm:block sm:p-0">
-                                    <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
-                            
+                    <div class="mt-12 lg:m-0 lg:col-span-2 lg:pl-8">
+                        <div class="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 lg:px-0 lg:py-20 lg:max-w-none">
+                            <h2 class="text-base font-semibold uppercase tracking-wider text-gray-200">Share Your Ideas –
+                                Help
+                                Us Improve!</h2>
+                            <p class="mt-2 text-white text-3xl font-bold tracking-tight sm:text-4xl">We’re here to help</p>
+                            <p class="mt-3 text-xl text-gray-300">At E-Passport, we believe in continuous
+                                improvement, and your insights matter
+                                to us! We invite you to share your thoughts and ideas on how we can enhance our attendance
+                                tracking system to better suit your
+                                needs. Your feedback is invaluable in shaping the future of our application, ensuring it
+                                meets
+                                the unique requirements of
+                                educators, event organizers, and students.</p>
+                            <div x-data="{ isOpen: true }" class="mt-8">
+                                <button @click="isOpen = true" class="inline-flex rounded-md shadow" type="button">
+                                    <a href="#"
+                                        class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-50">
+                                        Visit the help center
+                                        <!-- Heroicon name: solid/external-link -->
+                                        <svg class="-mr-1 ml-3 h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                            <path
+                                                d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
+                                            <path
+                                                d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
+                                        </svg>
+                                    </a>
+                                </button>
+                                <div x-show="isOpen" x-transition:enter="transition duration-300 ease-out"
+                                    x-transition:enter-start="translate-y-4 opacity-0 sm:translate-y-0 sm:scale-95"
+                                    x-transition:enter-end="translate-y-0 opacity-100 sm:scale-100"
+                                    x-transition:leave="transition duration-150 ease-in"
+                                    x-transition:leave-start="translate-y-0 opacity-100 sm:scale-100"
+                                    x-transition:leave-end="translate-y-4 opacity-0 sm:translate-y-0 sm:scale-95"
+                                    class="fixed inset-0 z-10 overflow-y-auto" aria-labelledby="modal-title" role="dialog"
+                                    aria-modal="true">
                                     <div
-                                        class="relative inline-block px-4 pt-5 pb-4 overflow-hidden text-left align-bottom transition-all transform bg-white rounded-lg shadow-xl rtl:text-right sm:my-8 sm:align-middle sm:max-w-sm sm:w-full sm:p-6">
-                                        <div>
-                                            <div class="flex items-center justify-center">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-gray-700 dark:text-gray-300" fill="none"
-                                                    viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4" />
-                                                </svg>
+                                        class="flex items-end justify-center min-h-screen px-4 pt-4 pb-20 text-center sm:block sm:p-0">
+                                        <span class="hidden sm:inline-block sm:align-middle sm:h-screen"
+                                            aria-hidden="true">&#8203;</span>
+            
+                                        <div
+                                            class="relative inline-block px-4 pt-5 pb-4 overflow-hidden text-left align-bottom transition-all transform bg-white rounded-lg shadow-xl rtl:text-right sm:my-8 sm:align-middle sm:max-w-sm sm:w-full sm:p-6">
+                                            <div>
+                                                <div class="flex items-center justify-center">
+                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                        class="w-8 h-8 text-gray-700 dark:text-gray-300" fill="none"
+                                                        viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                                            d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4" />
+                                                    </svg>
+                                                </div>
+            
+                                                <div class="mt-2 text-center">
+                                                    <h3 class="text-lg font-medium leading-6 text-gray-800 capitalize"
+                                                        id="modal-title">
+                                                        Archive Project</h3>
+                                                    <p class="mt-2 text-sm text-gray-500 ">
+                                                        Lorem, ipsum dolor sit amet consectetur
+                                                        adipisicing elit. Aspernatur dolorum aliquam ea, ratione deleniti porro
+                                                        officia? Explicabo
+                                                        maiores suscipit.
+                                                    </p>
+                                                </div>
                                             </div>
-                            
-                                            <div class="mt-2 text-center">
-                                                <h3 class="text-lg font-medium leading-6 text-gray-800 capitalize" id="modal-title">
-                                                    Archive Project</h3>
-                                                <p class="mt-2 text-sm text-gray-500 ">
-                                                    Lorem, ipsum dolor sit amet consectetur
-                                                    adipisicing elit. Aspernatur dolorum aliquam ea, ratione deleniti porro officia? Explicabo
-                                                    maiores suscipit.
-                                                </p>
-                                            </div>
-                                        </div>
-                            
-                                        <div class="mt-5 sm:flex sm:items-center sm:justify-between">
-                                            <a href="#" class="text-sm text-blue-500 hover:underline">Learn more</a>
-                            
-                                            <div class="sm:flex sm:items-center ">
-                                                <button @click="isOpen = false"
-                                                    class="w-full px-4 py-2 mt-2 text-sm font-medium tracking-wide text-gray-700 capitalize transition-colors duration-300 transform border border-gray-200 rounded-md sm:mt-0 sm:w-auto sm:mx-2 dark:text-gray-200 dark:border-gray-700 dark:hover:bg-gray-800 hover:bg-gray-100 focus:outline-none focus:ring focus:ring-gray-300 focus:ring-opacity-40">
-                                                    Cancel
-                                                </button>
-                            
-                                                <button
-                                                    class="w-full px-4 py-2 mt-2 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-600 rounded-md sm:w-auto sm:mt-0 hover:bg-blue-500 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40">
-                                                    Archive
-                                                </button>
+            
+                                            <div class="mt-5 sm:flex sm:items-center sm:justify-between">
+                                                <a href="#" class="text-sm text-blue-500 hover:underline">Learn more</a>
+            
+                                                <div class="sm:flex sm:items-center ">
+                                                    <button @click="isOpen = false"
+                                                        class="w-full px-4 py-2 mt-2 text-sm font-medium tracking-wide text-gray-700 capitalize transition-colors duration-300 transform border border-gray-200 rounded-md sm:mt-0 sm:w-auto sm:mx-2 dark:text-gray-200 dark:border-gray-700 dark:hover:bg-gray-800 hover:bg-gray-100 focus:outline-none focus:ring focus:ring-gray-300 focus:ring-opacity-40">
+                                                        Cancel
+                                                    </button>
+            
+                                                    <button
+                                                        class="w-full px-4 py-2 mt-2 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-600 rounded-md sm:w-auto sm:mt-0 hover:bg-blue-500 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40">
+                                                        Archive
+                                                    </button>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                       
+            
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+        
+       
     </div>
 
 
@@ -619,7 +631,7 @@
 
 <!-- Team Section -->
 <section class="bg-gray-50">
-    <div class="max-w-7xl mx-auto py-12 px-4 text-center sm:px-6 lg:px-8 lg:py-24">
+    <div class="max-w-7xl mx-auto py-16 text-center sm:px-6">
         <div class="space-y-8 sm:space-y-12">
             <div class="space-y-5 sm:mx-auto sm:max-w-xl sm:space-y-4 lg:max-w-5xl">
                 <h2 class="text-base font-semibold tracking-wider text-cyan-600 uppercase">team</h2>
@@ -772,7 +784,7 @@
 
 
 
-<section class="relative bg-white py-16 sm:py-24 lg:py-32">
+<section class="relative bg-whitepy-12 px-4 sm:px-6 lg:px-8 lg:py-24">
     <div class=" mx-auto max-w-md px-4  sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
         <div class="text-center">
             <h2 class="text-base font-semibold tracking-wider text-cyan-600 uppercase">Technologies</h2>
@@ -785,7 +797,7 @@
                 organizers, and students alike.</p>
         </div>
         
-        <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div class=" mt-12 mx-auto grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
             <div class="p-4 border rounded-lg bg-slate-100">
                 <svg class="w-8 h-8" viewBox="0 0 30 30" fill="none">
                     <path
